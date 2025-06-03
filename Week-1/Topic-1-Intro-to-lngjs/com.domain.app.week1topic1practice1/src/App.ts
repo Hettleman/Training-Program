@@ -72,23 +72,23 @@ export class App
     ]
   }
 
-  override _handleEnter() {
-    this.Logo.setSmooth('scale', 2, {
-      duration: 2.5,
-    })
-    this.Text.setSmooth('y', 800, {
-      duration: 2.5,
-    })
-    this.Text.setSmooth('alpha', 0, {
-      duration: 2.5,
-      timingFunction: 'ease-out',
-    })
-    this.Mystery.smooth = {
-      x: 1025,
-      y: 550,
-      scale: 1,
-    }
-  }
+  // override _handleEnter() {
+  //   this.Logo.setSmooth('scale', 2, {
+  //     duration: 2.5,
+  //   })
+  //   this.Text.setSmooth('y', 800, {
+  //     duration: 2.5,
+  //   })
+  //   this.Text.setSmooth('alpha', 0, {
+  //     duration: 2.5,
+  //     timingFunction: 'ease-out',
+  //   })
+  //   this.Mystery.smooth = {
+  //     x: 1025,
+  //     y: 550,
+  //     scale: 1,
+  //   }
+  // }
 
   override _init() {
     this.stage.transitions.defaultTransitionSettings.duration = 3
@@ -107,5 +107,9 @@ export class App
         },
       ],
     }).start()
+  }
+
+  override _handleEnter(){
+    console.log("Hello World"!)
   }
 }

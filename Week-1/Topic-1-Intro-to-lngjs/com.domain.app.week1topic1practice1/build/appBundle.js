@@ -3,7 +3,7 @@
  * SDK version: 5.5.5
  * CLI version: 2.14.2
  *
- * Generated: Tue, 03 Jun 2025 22:45:14 GMT
+ * Generated: Tue, 03 Jun 2025 23:15:58 GMT
  */
 
 var APP_com_domain_app_week1topic1practice1 = (function () {
@@ -6753,23 +6753,23 @@ var APP_com_domain_app_week1topic1practice1 = (function () {
         url: Utils.asset('fonts/Roboto-Regular.ttf')
       }];
     }
-    _handleEnter() {
-      this.Logo.setSmooth('scale', 2, {
-        duration: 2.5
-      });
-      this.Text.setSmooth('y', 800, {
-        duration: 2.5
-      });
-      this.Text.setSmooth('alpha', 0, {
-        duration: 2.5,
-        timingFunction: 'ease-out'
-      });
-      this.Mystery.smooth = {
-        x: 1025,
-        y: 550,
-        scale: 1
-      };
-    }
+    // override _handleEnter() {
+    //   this.Logo.setSmooth('scale', 2, {
+    //     duration: 2.5,
+    //   })
+    //   this.Text.setSmooth('y', 800, {
+    //     duration: 2.5,
+    //   })
+    //   this.Text.setSmooth('alpha', 0, {
+    //     duration: 2.5,
+    //     timingFunction: 'ease-out',
+    //   })
+    //   this.Mystery.smooth = {
+    //     x: 1025,
+    //     y: 550,
+    //     scale: 1,
+    //   }
+    // }
     _init() {
       this.stage.transitions.defaultTransitionSettings.duration = 3;
       this.Background.animation({
@@ -6791,6 +6791,9 @@ var APP_com_domain_app_week1topic1practice1 = (function () {
           }
         }]
       }).start();
+    }
+    _handleEnter() {
+      console.log("Hello World");
     }
   }
 
