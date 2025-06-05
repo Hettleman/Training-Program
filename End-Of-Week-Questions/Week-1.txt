@@ -1,0 +1,56 @@
+What’s an OTT App?
+OTT stands for over the top. It is an app that uses the internet
+to get content rather than satelites and cable. It can be used for 
+video, audio and calling.
+
+What kind of devices run OTT apps?
+Devices that have access to the internet: Phone, Computer, smart TV
+
+What are the main differences between OTT development vs general web development?
+OTT apps are developed to be navigated by a tv remote-like controller. Computer arrows can 
+be mapped to each button on a controller. It's also normally used on TV's which have dynamic
+layouts and are typically horizontal rather than verticle like a phone.
+
+What is a Focus Manager?
+It's the part of the program that manages key strokes. It manages for example, When
+you click enter, it will console.log "Hello World"
+
+What is a Platform Abstraction Layer?
+Depending on which platform the user is using, they may need a different
+platform class. Once we detect what platform they are using, we can choose
+the right platform based on the device. The different platforms are actually just
+and abstraction of the platform.
+
+
+What do we call a “Shell” app?
+A native app that has a webview where we can run our code.
+
+What is LightningJS?
+LightningJS is a javascript library that is especially made for developing TV apps.
+It doesn't use HTML or CSS, just javascript. Makes browser-based tv apps.
+
+How can I add new elements to a Lightning app?
+Add it inside the template. Add any styles you want. Rebuild your project. Do lng serve to run it.
+
+How would you setup your browser to test an OTT app?
+You want to set up your browser as close to the device the app will be used on as possible.
+Pay attention to: The size of the screen, Pixel Guide, don't use flex positioning, only absolute or relative.
+
+What’s a source control system? What benefits does it have?
+It keeps track of the changes you make to your code. It allows groups of people to work on the same
+code and if there are merge conflicts, it will help to solve them. You can also go back
+to a previous commit in your code when needed.
+
+What’s a repository?
+A repository is where you can find all previous commits, merges, anything and everything git.
+
+What’s a branch? When do you create them?
+A branch is when you can copy all the code in your project and create a side project to change so you
+aren't affecting the main version. You can run your code, test it, and once your are satisfied with 
+the new code, you can make a pull request then merge.
+
+What’s a pull request? When do you create them?
+A pull request is a way of checking the changes that you wish to make to the main version of the code.
+Typically someone higher up in the company will do a code review and approve or deny with details your
+changes. You can make one through the github web interface by looking at commits on your branch and clicking
+on "compare & pull request." You then send a link to the person you want to check your code.
