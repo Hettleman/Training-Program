@@ -110,6 +110,6 @@ export class App
   }
 
   override _handleEnter(){
-    console.log("Hello World"!)
+    console.log("What's Up!")
   }
 }
